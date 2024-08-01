@@ -23,6 +23,28 @@
     --item-min-height-sm: 20rem;
     --item-min-height-md: 30rem;
 }
+.game-preview{
+    justify-items: center;
+    display: flow;
+    margin: 10px 500px;
+}
+.game-preview-image {
+    justify-items: center;
+}
+.regular-p {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 22px;
+    justify-content: center;
+    display: flex;
+}
+.regular-h {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 32px;
+    justify-content: center;
+    display: flex;
+}
 /* Base Styles */
 *{
     margin: 0;
@@ -174,7 +196,6 @@ body.light-theme {
 }
 .header.activated {
     box-shadow: 0 1px .5rem var(--transparent-light-color);
-    background-color: red;
 }
 .menu.activated {
     box-shadow: 1px 1px 1rem var(--transparent-light-color);
