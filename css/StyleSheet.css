@@ -93,7 +93,7 @@ body.light-theme {
 .section{
     padding-block: 5rem;
 }
-.Welcome {
+.Main {
     font-size: 32px;
     padding: 100px 100px;
     justify-content:center;
@@ -369,12 +369,12 @@ article:hover .article-title{
     background-color: var(--second-background-color);
     padding: 2.5rem;
 }
-.trending-news-box{
+.trending-news-box {
     display: flex;
     flex-direction: column;
     gap: var(--gap);
     padding-block: 2rem;
-    border: 1px solid --transparency-light-color;
+    border: 1px solid var(--transparency-light-color);
 }
 .trending-news-box:last-of-type{
     border-bottom: none;
