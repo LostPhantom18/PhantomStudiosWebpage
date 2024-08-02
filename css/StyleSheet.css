@@ -45,14 +45,12 @@
     justify-content: center;
     display: flex;
 }
-/* Base Styles */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 html {
-    /* font-size: 10px; */
     font-size: 62.5%
 }
 body{
@@ -95,7 +93,6 @@ body.light-theme {
     --transparent-dark-color: #f1f1f1;
     --transpernet-light-color: rgba(0,0,0,0.1);
 }
-/* Reusable classes */
 .container{
     max-width: 160rem;
     margin: 0 auto;
@@ -134,6 +131,16 @@ body.light-theme {
     color: var(--light-color);
     font-size: 24px;
 }
+.Welcome-H3 {
+    display: flex;
+    justify-content: center;
+    color: var(--light-color);
+    font-size: 18px;
+}
+.logo {
+    font-size: var(--font-size-md);
+    color: var(--light-color);
+}
 .header{
     background-color: var(--second-background-color);
     position: fixed;
@@ -148,10 +155,7 @@ body.light-theme {
     justify-content: space-between;
     padding-block: 1.5rem;
 }
-.logo{
-    font-size: var(--font-size-md);
-    color: var(--light-color);
-}
+
 .menu {
     position: absolute;
     top: 8.5rem;
