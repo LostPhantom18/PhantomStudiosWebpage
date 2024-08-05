@@ -50,3 +50,52 @@ themeToggleBtn.addEventListener('click', () => {
         localStorage.removeItem('currentTheme');
     }
 });
+// Search code
+let availableKeywords = [
+    'Slime Wars: Origins',
+    'Winter is here: Origins',
+    'Founder'
+]
+
+const resultsBox = document.querySelector(".result-box");
+const inputBox = document.getElementById("input-box");
+
+inputBox.onkeyup = function () {
+    let result = [];
+    let input = inputBox.value;
+    if (input.length) {
+        result = availableKeywords.filter((keyword) => {
+            return keyword.toLowerCase().includes(input.toLowerCase());
+        });
+        console.log(result);
+    }
+    display(result);
+    if (!result.length) {
+        resultBox.innerHTML = '';
+    }
+}
+
+function display(result) {
+    const content = result.map((list) => {
+        return "<li onclick=selectInput(this)>" + list + "</li>";
+    });
+    
+    resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+}
+function selectInput(list) {
+    if (list.innerHTML == "Founder") {
+        console.log("Clicked FOunder");
+        location.replace("https://phantomstudios.dev/Articles/Featured/Featured1/IntroToPhantomStudios.html");
+        
+    } else if (list.innerHTML == "Slime Wars: Origins") {
+        console.log("Clicked Slime Wars Origins");
+        
+        location.replace("https://phantomstudios.dev/Articles/Featured/Featured2/Slime%20Wars%20Origins.html");
+    }
+    else if (list.innerHTML == "Winter is here: Origins") {
+        console.log("Clicked Winter is here Origins");
+        location.replace("https://phantomstudios.dev/Articles/Featured/Featured3/Winter%20is%20here%20Origins.html");
+    }
+    inputBox.value = list.innerHTML;
+    resultsBox.innerHTML = '';
+}

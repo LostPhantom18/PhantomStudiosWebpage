@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/StyleSheet.css" />
     <link rel="icon" sizes="20x32" href="/images/Lost Phantom Logo.png">
     <title>Phantom Studios | Home</title>
-    <script src="js/main.js"></script>
 </head>
 <body>
     <header class="header" id="header">
@@ -56,7 +55,25 @@
             </div>
         </nav>
     </header>
-    <div class="Main">
+    <!-- Search-->
+    <div class="search-form-container container" id="search-form-container">
+        <div class="search-box">
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Search" />
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </div>
+            <div class="result-box">
+            </div>
+            <span class="form-note">Or press ESC to close.</span>
+        </div>
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+
+    <section class="Main">
         <h1 class="Welcome-H1">Games</h1>
         <p class="regular-p"> You can wishlist on steam by clicking the image! </p>
         <br />
@@ -71,8 +88,7 @@
             <img src="/images/Winterishereupdated.png" alt="" class="game-preview-image">
         </a>
         <p class="regular-p"> Winter is here is a Zombie Defense Base Builder game </p>
-    </div>
-
+    </section>
     <!-- Footer -->
     <footer class="footer section">
         <div class="footer-container container d-grid">
@@ -101,6 +117,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

@@ -28,6 +28,45 @@
     display: flow;
     margin: 10px 500px;
 }
+.search-box{
+    width: 600px;
+    margin: 200px auto 0;
+    border-radius: 5px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: var(--light-color);
+}
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+.result-box ul{
+    border-top: 1px solid;
+    padding: 15px 10px;
+}
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+}
+.result-box ul li:hover{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    background: var(--second-background-color);
+}
 .game-preview-image {
     justify-items: center;
 }
