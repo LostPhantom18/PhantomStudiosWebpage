@@ -86,16 +86,20 @@ function display(result) {
 function selectInput(list) {
     if (list.innerHTML == "Founder") {
         console.log("Clicked FOunder");
-        location.replace("https://phantomstudios.dev/Articles/Featured/Featured1/IntroToPhantomStudios.html");
+        location.replace("https://phantomstudios.dev/Articles/Archive/1IntroToPhantomStudios/1IntroToPhantomStudios.html");
         
     } else if (list.innerHTML == "Slime Wars: Origins") {
         console.log("Clicked Slime Wars Origins");
         
-        location.replace("https://phantomstudios.dev/Articles/Featured/Featured2/Slime%20Wars%20Origins.html");
+        location.replace("https://phantomstudios.dev/Articles/Archive/2SlimeWarsOrigins/2SlimeWarsOrigins.html");
     }
     else if (list.innerHTML == "Winter is here: Origins") {
         console.log("Clicked Winter is here Origins");
-        location.replace("https://phantomstudios.dev/Articles/Featured/Featured3/Winter%20is%20here%20Origins.html");
+        location.replace("https://phantomstudios.dev/Articles/Archive/3WinterIsHereOrigins/3WinterIsHereOrigins.html");
+    }
+    else if (list.innerHTML == "Why does Scope matter?") {
+        console.log("Clicked Why does Scope matter?");
+        location.replace("https://phantomstudios.dev/Articles/Archive/4WhyDoesScopeMatter/4WhyDoesScopeMatter.html");
     }
     inputBox.value = list.innerHTML;
     resultsBox.innerHTML = '';
