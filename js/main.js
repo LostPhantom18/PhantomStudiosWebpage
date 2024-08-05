@@ -54,7 +54,8 @@ themeToggleBtn.addEventListener('click', () => {
 let availableKeywords = [
     'Slime Wars: Origins',
     'Winter is here: Origins',
-    'Founder'
+    'Founder',
+    "Why does Scope matter?"
 ]
 
 const resultsBox = document.querySelector(".result-box");
